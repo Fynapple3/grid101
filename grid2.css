@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+}
+
+.container{
+    background-color: blue;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "nn nn nn"
+                        "as mm mm"
+                        "ff ff ff";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 3fr 0.5fr;
+}
+
+nav{
+  background: red;
+  grid-area: nn;  
+}
+
+aside{
+    background-color: aqua;
+    grid-area: as;
+}
+
+main{
+    background-color: brown;
+    grid-area: mm;
+}
+
+footer{
+    background-color: #e415c8;
+    grid-area: ff;
+}

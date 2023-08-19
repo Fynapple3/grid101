@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "n n n"
+                        "as m m"
+                        "f f f";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 3fr 0.3fr;
+}
+
+nav{
+    background: red;
+    grid-area: n;
+}
+
+aside{
+    background: #00ff37;
+    grid-area: as;
+}
+
+main{
+    background: #001aff;
+    grid-area: m;
+
+}
+
+footer{
+    background: #ff00dd;
+    grid-area: f;
+    
+}
